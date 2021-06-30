@@ -1,0 +1,112 @@
+.estudiar{
+    margin: 30px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.estudiar h1{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3em;
+    margin: 60px;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.estudiar-btns{
+    margin: 40px auto;
+}
+.estudiar-btns button{
+    min-width: 100px;
+    margin: 20px;
+    margin-top: 50px;
+}
+.error{
+    position: absolute;
+    color: red;
+    font-size: 0.7rem;
+}
+.section{
+    margin: 50px auto;
+    position: relative;
+    padding: 30px;
+}
+.login{
+    max-width: 800px;
+}
+.sign-up{
+    max-width: 1000px;
+}
+.courses{
+    box-shadow: none;
+    max-width: 800px;
+    margin: 0;
+}
+.section h1{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.courses h3{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    background:  linear-gradient(125deg,#a72879, #5543ca);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.my-btn{
+    color: rgba(255, 255, 255, 1);
+    background-image: linear-gradient(125deg, rgba(167, 40, 121, 1), #5543ca);
+}
+.sc-btn{
+    word-wrap: normal;
+}
+.my-btn:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.my-btn:active{
+    box-shadow: #a72879;
+}
+.smalls small{
+    color:  #5543ca;
+}
+.smalls small:hover{
+    color: blue;
+    cursor: pointer;
+}
+.check-box{
+     transform: scale(1.45);
+    -webkit-transform: scale(1.45);
+    -moz-transform: scale(1.45);
+    -ms-transform: scale(1.45);
+    -o-transform: scale(1.45);
+}
+@media only screen and (min-width:800px){
+    .login{
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+    }
+}
+@media only screen and (min-width:1000px){
+    .sign-up{
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+    }
+}

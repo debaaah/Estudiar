@@ -1,0 +1,62 @@
+.estudiar-nav{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2em;
+    padding-right: 10px;
+    line-height: 48px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logout{
+    color: rgba(255,0,0,.5);
+}
+.logout:hover{
+    color: red;
+}
+.content-box{
+    margin: 20px auto;
+}
+.test-card{
+    margin: 30px;
+}
+.course-box, .test-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardbox:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+}
+.cardbox{
+    margin: 10px;
+}
+h4{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    line-height: 38px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.notif-box{
+    margin: 20px 10px;
+}
+.about{
+    margin: 20px 10px;
+}
+.about ul{
+    padding-inline-start: 0px;
+}
+.about h5{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
