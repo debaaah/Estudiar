@@ -21,7 +21,7 @@ export const Level =({label, ...props}) => {
     const [level, setLevel] = useState('Choose level');
     const levels = [
         {
-            value: 'Level'
+            value: ' '
         },
         {
         key: 1,
@@ -43,9 +43,8 @@ export const Level =({label, ...props}) => {
     const selected = (num) =>{ setLevel(num)}
     return(
         <div>
-           {/* <label htmlFor={field.name}>{label}</label>*/}
+           <label htmlFor={field.name}>{label}</label>
             <select 
-            value = {level} 
             onChange={(e)=> setLevel(e.target.value)}
             className='form-control'
             {...field}{...props}

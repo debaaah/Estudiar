@@ -7,12 +7,12 @@ import {
   useHistory } from 'react-router-dom'
   import { OldUser } from './OldUser'
 
-export const Navbar = () => {
+export const Lnav = () => {
     let history = useHistory()
     const push = () => {
-    history.push('/login')
-    window.location.reload()
-    }
+      history.push('/lecturer-login')
+      window.location.reload()
+      }
     const [menuCollapse, setMenuCollapse] = useState(false)
     const menuIconClick = () => {
         menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true)
@@ -26,24 +26,22 @@ export const Navbar = () => {
 
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
-        <Link className="nav-link" to="/home">Home</Link>
+    <li className="nav-item">
+        <Link className="nav-link" to="/lecturers-home">Notifications</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/about">Profile</Link>
+        <Link className="nav-link">Profile</Link>
       </li>
       <li className="nav-item ">
-        <Link className="nav-link" to="/tests">Tests</Link>
+        <Link className="nav-link" >Tests</Link>
       </li>
       <li className="nav-item ">
-        <Link className="nav-link" to="/assignment">Assignment</Link>
+        <Link className="nav-link" >Assignment</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/courses">Courses</Link>
+        <Link className="nav-link" >Courses</Link>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/notification">Notifications</Link>
-      </li>
+      
     </ul>
     <div className='nav-item'><span className='nav-link logout' data-toggle='modal' data-target='#logout'>Logout</span></div>
 
@@ -57,7 +55,7 @@ export const Navbar = () => {
           </div>
           <div className='modal-body'> Are you sure you want to logout?</div>
           <div className='modal-footer'>
-          <Link  to='/login'><button type='button' className='btn ' data-dismiss='modal' onClick={push} >Logout</button></Link>
+          <button type='button' className='btn ' data-dismiss='modal' onClick={push} >Logout</button>
           </div>
         </div>
       </div>

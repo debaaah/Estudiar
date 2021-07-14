@@ -34,22 +34,17 @@
 .cardbox{
     margin: 10px;
 }
-h4{
+h4, .tst-box .aval{
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 5px;
     line-height: 38px;
-    color: #5543ca;
-    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .notif-box{
     margin: 20px 10px;
 }
-.about{
+.about, .test-container, .tst-box, .lorem{
     margin: 20px 10px;
 }
 .about ul{
@@ -59,4 +54,27 @@ h4{
     text-transform: uppercase;
     margin-bottom: 15px;
     text-align: center;
+}
+.lorem img{
+    width: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.sust h5{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    line-height: 38px;
+    color: rgba(0,0,0,1);
+}
+.sust h5:hover{
+    color:blue;
+    cursor: pointer;
+}
+@media only screen and (min-width:800px){
+    .test-container-form{
+    margin:  auto 40px;
+    }
 }

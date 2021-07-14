@@ -3,28 +3,27 @@ import { Link, useHistory } from "react-router-dom";
 import { Formik, Form } from 'formik';
 import { TextField } from './Textfield';
 import * as Yup from 'yup';
-import { LecOu } from './Lolduser';
 import useLocalStorage from 'react-use-localstorage'
 
-export const OldUser = (props) => {
+export const LecOu = (props) => {
     let history = useHistory();
-    let user = props.value
+    let Luser = props.value
   const validate = Yup.object({
-    matNo: Yup.string()
-    .matches(user.matNo,'User not found')
-    .required('Matriculation is required'),
+    idNo: Yup.string()
+    .matches(Luser.idNo,'User not found')
+    .required('Identification is required'),
     password: Yup.string()
-    .matches(user.password, 'password incorrect')
+    .matches(Luser.password, 'password incorrect')
     .required('Password is required'),
   })
-    //username and login only 
+    //Lusername and login only 
     return(
         <section className='section login'>
         <div className='container mt-3'>
         <div className='row justify-content-center'>
           <div className='col-7'>
             <h1>Login</h1>
-            <div className='sust'><Link to='/lecturer-login'><h5>student</h5></Link></div>
+            <div className='sust'><Link to='/login'><h5>lecturer</h5></Link></div>
             <Formik
             initialValues={{
               matNo: '',
@@ -32,12 +31,12 @@ export const OldUser = (props) => {
             }}
             validationSchema={validate}
             onSubmit={values => {
-              history.push('/home')
+                history.push('/lecturers-home')
             }
             }
             >
                 <Form>
-                    <TextField label='Matriculation Number' name='matNo' type='text'/> 
+                    <TextField label='Identification Number' name='matNo' type='text'/> 
                     <TextField label='Password' name='password' type='password'/>
                     <div className='d-flex justify-content-center'>
                     <button className='my-btn btn mt-3 col-5 ' type='submit'>Login</button>
@@ -45,7 +44,7 @@ export const OldUser = (props) => {
                     
                 </Form>
             </Formik>
-            <div className='smalls mt-3'><small className='float-left' onClick={() => {history.push('/student-sign-up')}}><a>New User</a></small><small className='float-right'><a>Forgot Password</a></small></div>
+            <div className='smalls mt-3'><small className='float-left' onClick={() => {history.push('/lecturer-sign-up')}}><a>New User</a></small><small className='float-right'><a>Forgot Password</a></small></div>
            </div>
            </div>
         </div>

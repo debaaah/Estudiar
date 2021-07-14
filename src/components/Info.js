@@ -5,10 +5,7 @@ export const Info = () => {
     return(
         <div className='notif-box'>
             <ul className='list-group list-group-flush'>
-                <Notif value='Csc 234 test' time='1hr' />
-                <Notif value='Csc 314 test' time='2hr'/>
-                <Notif value='Submit course registration slip to Osas' time='5hr'/>
-                <Notif value='Pay your Dues!' time='7hr'/>
+                <Notif value='The link to CSC 411 test has been posted under Tests. Take the test and submit before  03/07/21 12:00PM.' time='1hr ago' />
             </ul>
         </div>
     )
